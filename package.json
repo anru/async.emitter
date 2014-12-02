@@ -1,0 +1,31 @@
+{
+  "name": "async.emitter",
+  "version": "1.0.0",
+  "description": "Like EventEmitter but with emitSeries and emitParallel methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anru/emitter-async.git"
+  },
+  "keywords": [
+    "async",
+    "emitter",
+    "dispatcher"
+  ],
+  "author": "Andrey Rublev <version.ru@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/anru/async.emitter/issues"
+  },
+  "homepage": "https://github.com/anru/async.emitter",
+  "dependencies": {
+    "async": "^0.9.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "sinon": "^1.12.1"
+  }
+}
