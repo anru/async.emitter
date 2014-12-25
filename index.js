@@ -1,12 +1,12 @@
 
-var util = require('util');
+var inherits = require('inherits');
 var events = require('events');
 var async = require('async');
 
 function AsyncEmitter() {
-    events.EventEmitter.apply(this);
+    events.EventEmitter.call(this);
 }
-util.inherits(AsyncEmitter, events.EventEmitter);
+inherits(AsyncEmitter, events.EventEmitter);
 
 AsyncEmitter.prototype._emitAsync = function(series, type, args, done) {
     var listeners = this.listeners(type);
